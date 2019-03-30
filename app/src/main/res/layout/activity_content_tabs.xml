@@ -65,7 +65,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email"
+        app:backgroundTint="@color/ic_create_background"
+        app:srcCompat="@mipmap/ic_create_round"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
 </android.support.design.widget.CoordinatorLayout>
