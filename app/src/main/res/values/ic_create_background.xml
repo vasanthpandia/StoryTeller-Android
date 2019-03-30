@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="ic_create_background">#26A69A</color>
-=======
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="ic_create_background">#5B5A62</color>
     <color name="ic_create_foreground">#F8F8F7</color>
->>>>>>> 11390ed1b8209bdae55d3481a192cf70aeff37e8
 </resources>
