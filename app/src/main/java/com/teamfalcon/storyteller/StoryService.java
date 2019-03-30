@@ -12,4 +12,9 @@ import retrofit2.http.Path;
 
 
 interface StoryService {
+    @GET("stories/")
+    Call<List<Story>> getStories();
+
+    @GET("story/{id}")
+    Call<Story> getStory(@Path("id") String id);
 }
