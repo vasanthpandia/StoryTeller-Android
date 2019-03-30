@@ -24,11 +24,6 @@ public class Story {
     @Expose
     String authorName;
 
-    //author: [User]
-    //            createdAt: String
-    //            updatedAt: String
-    //            tags: [String]
-
     @SerializedName("author")
     @Expose
     User author;
@@ -36,6 +31,14 @@ public class Story {
     @SerializedName("tags")
     @Expose
     String[] tags;
+
+    @SerializedName("createdAt")
+    @Expose
+    String createdAt;
+
+    @SerializedName("updatedAt")
+    @Expose
+    String updatedAt;
 
     public String get_id() {
         return _id;
@@ -63,5 +66,13 @@ public class Story {
 
     public String getAuthorName() {
         return authorName;
+    }
+
+    public String getCreatedAt() {
+        return createdAt;
+    }
+
+    public String getUpdatedAt() {
+        return updatedAt;
     }
 }
