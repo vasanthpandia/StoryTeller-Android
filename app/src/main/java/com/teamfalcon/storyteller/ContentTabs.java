@@ -5,6 +5,9 @@ import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
 import android.support.v4.app.Fragment;
@@ -19,6 +22,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ContentTabs extends AppCompatActivity {
 
@@ -99,6 +105,7 @@ public class ContentTabs extends AppCompatActivity {
          * The fragment argument representing the section number for this
          * fragment.
          */
+        List<Story> storyList;
         private static final String ARG_SECTION_NUMBER = "section_number";
 
         public PlaceholderFragment() {
@@ -119,10 +126,38 @@ public class ContentTabs extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
+            storyList = new ArrayList<Story>();
+
+             RecyclerView recyclerView;
+             StoriesAdapter storiesAdapter;
+
             View rootView = inflater.inflate(R.layout.fragment_content_tabs, container, false);
-            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+//            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
+//            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+
+            recyclerView = (RecyclerView) rootView.findViewById(R.id.story_recycler_view);
+
+            storiesAdapter = new StoriesAdapter(storyList);
+            RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
+            recyclerView.setLayoutManager(mLayoutManager);
+            recyclerView.setItemAnimator(new DefaultItemAnimator());
+            recyclerView.setAdapter(storiesAdapter);
+            cookData();
             return rootView;
+        }
+
+        private void cookData(){
+            Story story = new Story();
+            story.authorName = "Benjamin Franklin";
+            story.description = "This is a story about a cat and a mouse running around";
+            story.createdAt = "5 mins";
+            story.title= "The story of my life";
+            storyList.add(story);
+            storyList.add(story);
+            storyList.add(story);
+            storyList.add(story);
+
+
         }
     }
 
@@ -148,5 +183,8 @@ public class ContentTabs extends AppCompatActivity {
             // Show 3 total pages.
             return 3;
         }
+
+
+
     }
 }
