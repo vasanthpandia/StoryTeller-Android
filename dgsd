@@ -1,0 +1,40 @@
+[1mdiff --git a/app/app.iml b/app/app.iml[m
+[1mindex f3d141f..56c9d7d 100644[m
+[1m--- a/app/app.iml[m
+[1m+++ b/app/app.iml[m
+[36m@@ -68,13 +68,6 @@[m
+       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />[m
+       <sourceFolder url="file://$MODULE_DIR$/src/main/rs" isTestSource="false" />[m
+       <sourceFolder url="file://$MODULE_DIR$/src/main/shaders" isTestSource="false" />[m
+[31m-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/res" type="java-test-resource" />[m
+[31m-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/resources" type="java-test-resource" />[m
+[31m-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/assets" type="java-test-resource" />[m
+[31m-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/aidl" isTestSource="true" />[m
+[31m-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/java" isTestSource="true" />[m
+[31m-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/rs" isTestSource="true" />[m
+[31m-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/shaders" isTestSource="true" />[m
+       <sourceFolder url="file://$MODULE_DIR$/src/test/res" type="java-test-resource" />[m
+       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />[m
+       <sourceFolder url="file://$MODULE_DIR$/src/test/assets" type="java-test-resource" />[m
+[36m@@ -82,6 +75,13 @@[m
+       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />[m
+       <sourceFolder url="file://$MODULE_DIR$/src/test/rs" isTestSource="true" />[m
+       <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />[m
+[32m+[m[32m      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/res" type="java-test-resource" />[m
+[32m+[m[32m      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/resources" type="java-test-resource" />[m
+[32m+[m[32m      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/assets" type="java-test-resource" />[m
+[32m+[m[32m      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/aidl" isTestSource="true" />[m
+[32m+[m[32m      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/java" isTestSource="true" />[m
+[32m+[m[32m      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/rs" isTestSource="true" />[m
+[32m+[m[32m      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/shaders" isTestSource="true" />[m
+       <excludeFolder url="file://$MODULE_DIR$/build/generated/not_namespaced_r_class_sources" />[m
+       <excludeFolder url="file://$MODULE_DIR$/build/generated/source/r" />[m
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/annotation_processor_list" />[m
+[36m@@ -104,7 +104,6 @@[m
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_split_apk_resources" />[m
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javac" />[m
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />[m
+[31m-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/lint_jar" />[m
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifest-checker" />[m
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_assets" />[m
+       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_manifests" />[m
