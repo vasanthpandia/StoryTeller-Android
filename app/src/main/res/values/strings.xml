@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StroyTeller</string>
+    <string name="title_activity_content_tabs">ContentTabs</string>
+    <string name="tab_text_1">Global Feed</string>
+    <string name="tab_text_2">My Stories</string>
+    <string name="tab_text_3">Drafts</string>
+    <string name="action_settings">Settings</string>
+    <string name="logout_string">Logout</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
