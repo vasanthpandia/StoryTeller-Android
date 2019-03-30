@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">StroyTeller</string>
+    <string name="app_name">StoryTeller</string>
     <string name="title_activity_content_tabs">ContentTabs</string>
     <string name="tab_text_1">Global Feed</string>
     <string name="tab_text_2">My Stories</string>
